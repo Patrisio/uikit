@@ -7,6 +7,8 @@ type ButtonProps = {
 export const Button: FC<ButtonProps> = ({
     text
 }) => {
+    console.log('HELLO');
+    
     return (
         <button>
             {text}
