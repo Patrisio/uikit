@@ -19,5 +19,6 @@
         "lerna": "^7",
         "semantic-release": "^22",
         "typescript": "^5"
-    }
+    },
+    "version": "1.0.0"
 }
