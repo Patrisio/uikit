@@ -3,7 +3,12 @@
       "strict": true,
       "jsx": "react-jsx",
       "declaration": true,
-      "emitDeclarationOnly": false
-    }
+      "emitDeclarationOnly": false,
+      "lib": ["DOM", "DOM.Iterable", "ES2015", "ES2017"],
+      "target": "ES2017",
+      "moduleResolution": "node",
+      "skipLibCheck": false,
+      "module": "ESNext"
+    },
   }
   
