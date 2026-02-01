@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "strict": true,
+      "jsx": "react-jsx",
+      "declaration": true,
+      "emitDeclarationOnly": false
+    }
+  }
+  

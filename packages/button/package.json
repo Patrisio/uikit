@@ -1,0 +1,14 @@
+{
+    "name": "@my-org/button",
+    "version": "0.0.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": ["dist"],
+    "peerDependencies": {
+      "react": "^18"
+    },
+    "scripts": {
+      "build": "tsc -p tsconfig.json"
+    }
+  }
+  
