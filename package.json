@@ -1,16 +1,18 @@
 {
     "name": "@my-org/ui-kit",
     "private": true,
-    "workspaces": ["packages/*"],
+    "workspaces": [
+        "packages/*"
+    ],
     "scripts": {
-      "build": "lerna run build",
-      "lint": "lerna run lint",
-      "release": "semantic-release"
+        "build": "lerna run build",
+        "lint": "lerna run lint",
+        "release": "semantic-release"
     },
     "devDependencies": {
-      "lerna": "^7",
-      "semantic-release": "^22",
-      "typescript": "^5"
+        "@types/react": "^19.2.10",
+        "lerna": "^7",
+        "semantic-release": "^22",
+        "typescript": "^5"
     }
-  }
-  
+}
