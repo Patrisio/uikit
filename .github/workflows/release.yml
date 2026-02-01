@@ -1,5 +1,10 @@
 name: Release
 
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
 on:
   push:
     branches: [main]
@@ -9,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 18
@@ -18,3 +25,4 @@ jobs:
       - run: npm run release
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
